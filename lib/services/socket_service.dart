@@ -19,7 +19,7 @@ class SocketService with ChangeNotifier {
     _initConfig();
   }
 
-  final String ip = '192.168.194.23';
+  final String ip = '192.168.75.23';
   final String port = '8080';
 
   _initConfig() {
@@ -32,7 +32,7 @@ class SocketService with ChangeNotifier {
 
     _socket = io(
       url,
-      OptionBuilder().setTransports(['websocket']).enableAutoConnect().setExtraHeaders({'foo': 'bar'}).build(),
+      OptionBuilder().setTransports(['websocket']).enableAutoConnect().build(),
     );
 
     _socket.onConnect((_) {

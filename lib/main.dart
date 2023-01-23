@@ -16,12 +16,12 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => SocketService()),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Flutter bands',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
         initialRoute: HomeScreen.routeName,
-        routes: getAplicationRoutes(),
+        routes: getApplicationRoutes(),
         debugShowCheckedModeBanner: false,
       ),
     );
